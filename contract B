@@ -1,0 +1,7 @@
+import "AbstractA.sol"
+contract B {
+  function doYourThing(address addressOfA) returns(uint) {
+    A my_a = A(addressOfA);
+    return my_a.f1(true, 3);
+  }
+}
